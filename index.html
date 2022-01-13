@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horror Movies!</title>
+    <title>Horror!</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
@@ -14,20 +14,134 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navigation Bar -->
     <header>
-      <nav
-        class="navbar navbar-expand-sm navbar-light bg-light"
-        id="navbar-header"
-      >
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Container to center Brand and Items -->
         <div class="container">
           <a class="navbar-brand" href="index.html">All Things Horror!</a>
-          <ul>
-            <li>Movies</li>
-            <li>Books</li>
-            <li>Video Games</li>
-          </ul>
+
+          <!-- Toggler/Collapse Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseNavbar"
+            aria-control="collapseNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="collapseNavbar">
+            <ul class="navbar-nav">
+              <li class="navbar-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLinks"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Media
+                </a>
+                <div
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLinks"
+                >
+                  <a class="dropdown-item" href="media.html">Movies</a>
+
+                  <a class="dropdown-item" href="media.html">Books</a>
+
+                  <a class="dropdown-item" href="media.html">Games</a>
+                </div>
+              </li>
+              <li class="navbar-item"></li>
+              <a class="nav-link" href="news.html">News</a>
+              <li class="navbar-item"></li>
+              <a class="nav-link" href="contact.html">Contact</a>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
+
+    <!-- Featured -->
+    <section id="featured">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <a href="#">
+              <img
+                src="https://cdn.vox-cdn.com/thumbor/sRODHoPNEk58gz00l6YFlVNao3A=/0x0:3840x1608/920x613/filters:focal(1613x497:2227x1111):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69533608/1_008_070_c_v007._1000_1215__1.156.1_CR.0.jpg"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="col-sm">
+            <h6><span>Movies</span> / 1 day ago</h6>
+            <h1>[Review] The 2021 Netflix Horror Trilogy</h1>
+            <p>
+              Something special happens when you marathon horror movies. On
+              their own, slasher flicks like Friday the 13th or Halloween can
+              seem like nothing more than bloody fun. But when you watch a bunch
+              in a row, the connections and mythologies become much more
+              apparent; Jason Voorhees shifts from a murderous demon into
+              something more sympathetic. Some of them even feature “previously
+              on” segments to make these links more obvious.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Featured -->
+    <hr class="container" />
+    <!-- Featured Content -->
+    <section id="featured-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm card text-white">
+            <img src="./img/evilDead.jpg" class="card-img" alt="" />
+
+            <div
+              class="card-img-overlay d-flex align-content-end flex-wrap content"
+            >
+              <div>
+                <h6><span>Movies</span> / 1 day ago</h6>
+              </div>
+              <div>
+                <h3>Evil Dead: The scariest movie you've never seen!</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm card text-white">
+            <img src="./img/evilDead.jpg" class="card-img" alt="" />
+
+            <div
+              class="card-img-overlay d-flex align-content-end flex-wrap content"
+            >
+              <div>
+                <h6><span>Movies</span> / 1 day ago</h6>
+              </div>
+              <div>
+                <h3>Evil Dead: The scariest movie you've never seen!</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">One</div>
+          <div class="col-sm">One</div>
+          <div class="col-sm">One</div>
+          <div class="col-sm">One</div>
+        </div>
+      </div>
+    </section>
+    <!-- End Featured Content -->
   </body>
 </html>

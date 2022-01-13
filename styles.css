@@ -1,3 +1,25 @@
-#navbar-header {
-  background-color: crimson;
+section {
+  background-color: white;
+}
+span {
+  color: crimson;
+}
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+h6 {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+#featured {
+  margin-top: 50px;
+}
+#featured .container {
+  background-color: black;
+  padding: 30px;
+  color: white;
+}
+#featured-content .content {
+  text-shadow: 1px 1px 3px black;
 }
