@@ -36,3 +36,11 @@ a {
 #featured-content .subFeatured h6 {
   text-shadow: 1px 1px 3px black;
 }
+
+#contact {
+  text-align: center;
+}
+
+#contact input-group {
+  height: 300px;
+}
