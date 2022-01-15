@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <!-- Container to center Brand and Items -->
         <div class="container">
           <a class="navbar-brand" href="index.html">All Things Horror!</a>
@@ -52,11 +52,11 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLinks"
                 >
-                  <a class="dropdown-item" href="media.html">Movies</a>
+                  <a class="dropdown-item" href="media.html#movie">Movies</a>
 
-                  <a class="dropdown-item" href="media.html">Books</a>
+                  <a class="dropdown-item" href="media.html#books">Books</a>
 
-                  <a class="dropdown-item" href="media.html">Games</a>
+                  <a class="dropdown-item" href="media.html#games">Games</a>
                 </div>
               </li>
               <li class="navbar-item"></li>
@@ -68,5 +68,44 @@
         </div>
       </nav>
     </header>
+    <section>
+      <h2>Release Schedule</h2>
+      <table class="table table-hover table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Media</th>
+            <th>Name</th>
+            <th>Release Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Movie</td>
+            <td>Scream</td>
+            <td>January 14, 2022</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Movie</td>
+            <td>Morbius</td>
+            <td>April 1, 2022</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Movie</td>
+            <td>Texas Chainsaw Massacre</td>
+            <td>February 18, 2022</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Movie</td>
+            <td>The Black Phone</td>
+            <td>June 24, 2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>

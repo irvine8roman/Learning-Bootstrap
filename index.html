@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <!-- Container to center Brand and Items -->
         <div class="container">
@@ -53,11 +53,11 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLinks"
                 >
-                  <a class="dropdown-item" href="media.html">Movies</a>
+                <a class="dropdown-item" href="media.html#movie">Movies</a>
 
-                  <a class="dropdown-item" href="media.html">Books</a>
+                  <a class="dropdown-item" href="media.html#books">Books</a>
 
-                  <a class="dropdown-item" href="media.html">Games</a>
+                  <a class="dropdown-item" href="media.html#games">Games</a>
                 </div>
               </li>
               <li class="navbar-item"></li>
@@ -75,7 +75,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <a href="#">
+            <a href="./media.html">
               <img
                 src="https://cdn.vox-cdn.com/thumbor/sRODHoPNEk58gz00l6YFlVNao3A=/0x0:3840x1608/920x613/filters:focal(1613x497:2227x1111):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69533608/1_008_070_c_v007._1000_1215__1.156.1_CR.0.jpg"
                 alt=""
@@ -85,7 +85,9 @@
           </div>
           <div class="col-sm">
             <h6><span>Movies</span> / 1 day ago</h6>
-            <h1>[Review] The 2021 Netflix Horror Trilogy</h1>
+            <a href="media.html"
+              ><h1>[Review] Fear Street: The 2021 Netflix Horror Trilogy</h1></a
+            >
             <p>
               Something special happens when you marathon horror movies. On
               their own, slasher flicks like Friday the 13th or Halloween can
@@ -100,45 +102,101 @@
       </div>
     </section>
     <!-- End Featured -->
+
     <hr class="container" />
+
     <!-- Featured Content -->
     <section id="featured-content">
       <div class="container">
-        <div class="row">
-          <div class="col-sm card text-white">
-            <img src="./img/evilDead.jpg" class="card-img" alt="" />
+        <div class="row subFeatured">
+          <a href="media.html#evil-dead">
+            <div class="col-sm card text-white">
+              <img src="./img/evilDead.jpg" class="card-img" alt="" />
+
+              <div
+                class="card-img-overlay d-flex align-content-end flex-wrap content"
+              >
+                <div>
+                  <h6><span>Movies</span> / 1 day ago</h6>
+                </div>
+                <div>
+                  <h3>Evil Dead: The scariest movie you've never seen!</h3>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="col-sm card text-white">
+            <a href="media.html#games">
+            <img src="./img/projectzombie.jpg" class="card-img" alt="" />
 
             <div
               class="card-img-overlay d-flex align-content-end flex-wrap content"
             >
-              <div>
-                <h6><span>Movies</span> / 1 day ago</h6>
-              </div>
-              <div>
-                <h3>Evil Dead: The scariest movie you've never seen!</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm card text-white">
-            <img src="./img/evilDead.jpg" class="card-img" alt="" />
+              <h6><span>Games</span> / 3 day ago</h6>
 
-            <div
-              class="card-img-overlay d-flex align-content-end flex-wrap content"
-            >
-              <div>
-                <h6><span>Movies</span> / 1 day ago</h6>
-              </div>
-              <div>
-                <h3>Evil Dead: The scariest movie you've never seen!</h3>
-              </div>
+              <h3>
+                Project Zomboid: Perfectly Captures the Bleak, Lonely, Absurd
+                World of the Zombie Apocalypse
+              </h3>
             </div>
           </div>
+        </a>
         </div>
+
+        <hr class="container" />
+
         <div class="row">
-          <div class="col-sm">One</div>
-          <div class="col-sm">One</div>
-          <div class="col-sm">One</div>
-          <div class="col-sm">One</div>
+          <div class="col-sm card">
+            <a href="#">
+            <img src="./img/Hellraiser.jpg" class="card-img-top" alt="" />
+          </a>
+            <div class="card-body">
+              <h6><span>News</span> / 5 day ago</h6>
+              <p>
+                Hellraiser Reboot? Veteran Hellraiser writer Peter Atkins, who
+                penned 1996's Hellraiser: Bloodline, shares his reaction to the
+                upcoming Hulu movie reboot and casting of Jamie Clayton as
+                Pinhead.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm card">
+            <a href="media.html#books">
+            <img src="./img/horror books.png" class="card-img-top" alt="" />
+          </a>
+            <div class="card-body">
+              <h6><span>Books</span> / 1 day ago</h6>
+              <p>Our top Horror books for January 2022</p>
+            </div>
+          </div>
+          <div class="col-sm card">
+            <a href="#">
+            <img src="./img/dyinglight2.jpg" class="card-img-top" alt="" />
+          </a>
+            <div class="card-body">
+              <h6><span>Games</span> / 3 day ago</h6>
+              <p>
+                Final “Dying 2 Know” Episode Reveals More Co-op Info for ‘Dying
+                Light 2′ and More
+              </p>
+            </div>
+          </div>
+          <div class="col-sm card">
+            <a href="#">
+            <img
+              src="./img/elm-street-tribure.png"
+              class="card-img-top"
+              alt=""
+            />
+          </a>
+            <div class="card-body">
+              <h6><span>News</span> / 2 day ago</h6>
+              <p>
+                The Real ‘Nightmare on Elm Street’ House from Wes Craven’s
+                Original Classic Just Sold for $3 Million
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
